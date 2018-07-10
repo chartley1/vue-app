@@ -1,0 +1,39 @@
+{
+  "name": "vue-app",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --progress --hot --open",
+    "build": "webpack --mode production --progress",
+    "test": "eslint src"
+  },
+  "keywords": [],
+  "author": "Connor Hartley",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/server-test-utils": "^1.0.0-beta.20",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^5.1.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.3.0",
+    "jest-serializer-vue": "^2.0.2",
+    "vue-jest": "^2.6.0",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
