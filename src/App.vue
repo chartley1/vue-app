@@ -4,17 +4,28 @@
 
     // Local State
     data:() => ({ 
-      message: 'Hello, world!'
+      message: 'vue-app'
     })
   }
 </script>
 
 <template>
-  <section>
-    <h1>{{ message }}</h1>
+  <section id="vue-app">
+    <header>
+      <nav>
+        <router-link to="/summary">Summary</router-link> |
+        <router-link to="/income">Income</router-link> |
+        <router-link to="/expenses">Expenses</router-link>
+      </nav>
+    </header>
+    <router-view/>
   </section>
 </template>
 
 <style>
   @import './assets/css/app.css';
+
+  body {
+    text-align: center;
+  }
 </style>
