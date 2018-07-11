@@ -3,7 +3,6 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   module: {
-    entry: './src/index.js',
     rules: [
       {
         test: /\.vue$/,
@@ -16,6 +15,10 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },

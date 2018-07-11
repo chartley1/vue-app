@@ -1,12 +1,12 @@
 <script>
-export default {
-  name: 'App',
+  export default {
+    name: 'App',
 
-  // Local State
-  data:() => ({ 
-    message: 'Hello, world!'
-  })
-}
+    // Local State
+    data:() => ({ 
+      message: 'Hello, world!'
+    })
+  }
 </script>
 
 <template>
@@ -14,3 +14,7 @@ export default {
     <h1>{{ message }}</h1>
   </section>
 </template>
+
+<style>
+  @import './assets/css/app.css';
+</style>
